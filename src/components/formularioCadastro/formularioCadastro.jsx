@@ -20,7 +20,6 @@ class FormularioCadastro extends Component {
   _criarNota(evento) {
     evento.preventDefault();
     evento.stopPropagation();
-    console.log(`nova nota` + this.titulo + ' ' + this.texto);
     this.props.criarNota(this.titulo, this.texto);
   }
 
